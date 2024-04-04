@@ -1,0 +1,42 @@
+.board {
+    text-align: center;
+    padding-top: 3em;
+
+}
+
+.row {
+    width:304px;
+    margin: 0 auto;
+}
+
+.row > div {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.row > div:hover{
+    background-color: blue;
+}
+
+.top {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.bottom {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.left {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.right {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+}
