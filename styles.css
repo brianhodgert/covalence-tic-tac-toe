@@ -21,6 +21,7 @@
 }
 .row > div:hover{
     background-color: blue;
+    cursor: pointer;
 }
 
 .top {
