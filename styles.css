@@ -1,7 +1,7 @@
 .board {
     text-align: center;
     padding-top: 3em;
-
+    /* border:1px solid blue; */
 }
 
 .row {
@@ -14,29 +14,33 @@
     height: 100px;
     width: 100px;
 }
-
+.row::after{
+    content: "";
+    display: table;
+    clear:both;
+}
 .row > div:hover{
     background-color: blue;
 }
 
 .top {
-    border-top: 1px solid black;
+
     border-bottom: 1px solid black;
 }
 
 
 .bottom {
-    border-bottom: 1px solid black;
+
     border-top: 1px solid black;
 }
 
 .left {
-    border-left: 1px solid black;
+
     border-right: 1px solid black;
 }
 
 .right {
-    border-right: 1px solid black;
+
     border-left: 1px solid black;
 
 }
