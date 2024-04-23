@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Tic-Tac-Toe</title>
 </head>
+
 <body>
-    <div class="board">
+    <header>
         <h1>Tic Tac Toe</h1>
-        <div class="row">
-            <div id="tl" class="top left"></div>
-            <div id="tm" class="top middle"></div>
-            <div id="tr" class="top right"></div>
+    </header>
+    <div class="container">
+        <div id="banner"><H1>Enter Player Names</H1></div>
+        <div class="startPanel">
+            <div class="pl-input" pl="pl1">
+                <label for="player1">Player 1</label>
+                <input class="player" type="text" id="player1">
+                <button id="pl1" class="submit-name">Submit</button>
+            </div>
+            <div class="pl-input" pl="pl2">
+                <label for="player2">Player 2</label>
+                <input class="player" type="text" id="player2">
+                <button id="pl2" class="submit-name">Submit</button>
+            </div>
         </div>
-        <div class="row">
-            <div id="cl" class="center left"></div>
-            <div id="cm" class="center middle"></div>
-            <div id="cr" class="center right"></div>
+        <div class="board">
+            <h2 id="currentPlayer"></h2>
+            <div class="row">
+                <div class="row1 col1 cross1 top left"></div>
+                <div class="row1 col2 top middle"></div>
+                <div class="row1 col3 cross2 top right"></div>
+            </div>
+            <div class="row">
+                <div class="row2 col1 center left"></div>
+                <div class="row2 col2 cross1 cross2 center middle"></div>
+                <div class="row2 col3 center right"></div>
+            </div>
+            <div class="row">
+                <div class="row3 col1 cross2 bottom left"></div>
+                <div class="row3 col2 bottom middle"></div>
+                <div class="row3 col3 cross1 bottom right"></div>
+            </div>
         </div>
-        <div class="row">
-            <div id="bl" class="bottom left"></div>
-            <div id="bm" class="bottom middle"></div>
-            <div id="br" class="bottom right"></div>
-        </div>
+        <button id = "btnNewGame">New Game</button>
     </div>
-    
+    <script src="./app.js"></script>
 </body>
+
 </html>
